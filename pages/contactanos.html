@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----ANIMACION-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!---NAVBAR BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Centro celíaco Gchú</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../img/gluten-free.png" alt="glutenfree-logo"></a>
+                <h1 class="animate__animated animate__bounceInDown">Centro celiaco</h1>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto animate__animated animate__bounceInDown">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./talleres.html">Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html" tabindex="-1">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="maincontacto">
+        <section class="container-contact">
+            <h2>Contactanos para mas informacion</h2>
+            <div class="map-form-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7957.275689154172!2d-58.51992742483226!3d-33.01373192202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82bcfdd78ab%3A0xcd8a2f445ad3b1cc!2sUner%20Nutricion!5e0!3m2!1ses!2sar!4v1671716145582!5m2!1ses!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form class="form-contact">
+                <div class="input-ancho">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="input-ancho">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div class="input-ancho">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" name="Masculino">
+                    <label for="Femenino">Femenino</label>
+                    <input type="radio" name="Masculino">
+                    <label for="Otro">Otro</label>
+                    <input type="radio" name="Masculino">
+                </div>
+                <div class="input-ancho">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Enviar formulario">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="../img/gluten-free.png" alt="logoGlutenfree" class="glutenfreelogo">
+        <div>
+            <h4>Contactanos</h4>
+            <h4>Lavalle 20310 </h4>
+            <h4>3446 451412</h4>
+        </div>
+        <div class="redesfooter">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                    alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                    alt="Logo Instagram"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
