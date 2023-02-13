@@ -1,8 +1,8 @@
 /*-----------------HEADER------------------*/
 header {
     .navbar {
-        background-color: rgb(2, 75, 2);
-        color: white;
+        background-color: $color-primario;
+        color: $color-terciario;
         -webkit-text-stroke: solid 2px black;
         font-family: sans-serif;
 
@@ -28,8 +28,8 @@ header {
                             font-family: sans-serif;
 
                             &:hover {
-                                background-color: white;
-                                color: rgb(2, 75, 2);
+                                background-color: $color-terciario;
+                                color: $color-primario;
                                 transform: scale(1.2);
                             }
                         }

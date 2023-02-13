@@ -2,11 +2,22 @@
 /**---------HEADER------**/
 @media screen and (max-width:1020px) {
     header {
-        ul {
-            li {
-                a {
-                    margin: 10px;
-                    font-size: 20px;
+        .navbar {
+            .container-fluid {
+                div {
+                    ul {
+                        .nav-item {
+                            .nav-link {
+                                font-size: nth($font-size, 4);
+                                margin-left: 0;
+
+                                &:hover {
+                                    font-size: nth($font-size, 3);
+                                    transform: scale(1)
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -45,7 +56,7 @@
     main {
         .hipocrates {
             h2 {
-                font-size: 25px;
+                font-size: nth($font-size, 2);
             }
         }
     }
@@ -65,7 +76,7 @@
                 }
 
                 h1 {
-                    font-size: 25px;
+                    font-size: nth($font-size, 2);
                     margin: 0;
                     padding: 0;
                 }
@@ -77,7 +88,7 @@
     footer {
         div {
             h4 {
-                font-size: 20px;
+                font-size: nth($font-size, 3);
             }
         }
 
@@ -131,7 +142,7 @@
 
             h2 {
                 font-family: sans-serif;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 text-shadow: 0px 0px 15px black;
             }
         }
@@ -143,7 +154,7 @@
 
             h2 {
                 font-family: sans-serif;
-                font-size: 20px;
+                font-size: nth($font-size, 3);
                 -webkit-text-stroke: 0.5px black;
             }
         }
@@ -154,15 +165,27 @@
         img {
             width: 55px;
             height: 55px;
-            margin: 0;
-            padding: 0;
         }
 
-        h4 {
-            font-family: sans-serif;
-            font-size: 17px;
+        div {
+            h4 {
+                font-family: sans-serif;
+                font-size: 17px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .redes-footer {
             margin: 0;
-            padding: 0;
+            a {
+                img {
+                    width: 55px;
+                    height: 55px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
         }
     }
 }

@@ -11,6 +11,11 @@ body {
   flex-direction: column;
   height: 100vh; }
 
+main .nosotros, .productos-main .imagen-productos .div-contenedor, main .container-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 /*-----------------HEADER------------------*/
 header .navbar {
   background-color: #024b02;
@@ -69,19 +74,18 @@ main .acela p {
   font-weight: 500; }
 
 main .nosotros {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
   padding-bottom: 15px;
   margin-top: 20px; }
-  main .nosotros iframe {
-    width: 350px;
-    height: 350px; }
+  main .nosotros iframe,
   main .nosotros img {
     width: 350px;
-    height: 350px; }
+    height: 350px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 5px 0px rgba(2, 75, 2, 0.75);
+    border-radius: 15px; }
 
 /*-----------------SECCIONES TALLERES----------*/
 .galeria h2 {
@@ -107,41 +111,42 @@ main .nosotros {
     border-radius: 10px; }
 
 /*-----------------SECCIONES PRODUCTOS----------*/
-.productosmain {
+.productos-main {
   font-family: sans-serif; }
-  .productosmain .imagenProductos h2 {
-    text-align: center; }
-  .productosmain .imagenProductos .divcontenedor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .productos-main .imagen-productos h2 {
+    text-align: center;
+    background-color: black;
+    color: white; }
+  .productos-main .imagen-productos .div-contenedor {
     justify-content: center;
-    gap: 30px; }
-    .productosmain .imagenProductos .divcontenedor .cardproducto {
+    gap: 30px;
+    padding-bottom: 10px; }
+    .productos-main .imagen-productos .div-contenedor .card-producto {
       display: flex;
       flex-direction: column;
       border: 1px solid black;
       width: 300px;
-      text-align: center; }
-      .productosmain .imagenProductos .divcontenedor .cardproducto img {
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px rgba(2, 75, 2, 0.75); }
+      .productos-main .imagen-productos .div-contenedor .card-producto img {
         object-fit: cover;
         height: 320px; }
-        .productosmain .imagenProductos .divcontenedor .cardproducto img h3 {
+        .productos-main .imagen-productos .div-contenedor .card-producto img h3 {
           text-decoration: none;
           text-align: center;
           padding: 5px 10px; }
-      .productosmain .imagenProductos .divcontenedor .cardproducto a {
+      .productos-main .imagen-productos .div-contenedor .card-producto a {
         text-decoration: none;
         color: white;
         font-weight: bold;
         background-color: black;
-        padding: 5px 10px; }
+        padding: 5px 10px;
+        background: linear-gradient(to right, #0f9b0f, #000000);
+        border-radius: 10px; }
 
 /*-----------------SECCIONES CONTACTO----------*/
 main .container-contact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -168,10 +173,10 @@ main .container-contact {
   main .container-contact .form-contact {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    width: 47%;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    row-gap: 10px;
+    width: 47%; }
     main .container-contact .form-contact .input-ancho {
       display: flex;
       flex-direction: column;
@@ -223,9 +228,12 @@ footer {
 /**---------MEDIA QUERI  1020px--------------**/
 /**---------HEADER------**/
 @media screen and (max-width: 1020px) {
-  header ul li a {
-    margin: 10px;
-    font-size: 20px; }
+  header .navbar .container-fluid div ul .nav-item .nav-link {
+    font-size: 15px;
+    margin-left: 0; }
+    header .navbar .container-fluid div ul .nav-item .nav-link:hover {
+      font-size: 20px;
+      transform: scale(1); }
   /**---------FOOTER------**/
   footer img {
     height: 70px;
@@ -298,14 +306,19 @@ footer {
   /**--------FOOTER-----------------**/
   footer img {
     width: 55px;
-    height: 55px;
-    margin: 0;
-    padding: 0; }
-  footer h4 {
+    height: 55px; }
+  footer div h4 {
     font-family: sans-serif;
     font-size: 17px;
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  footer .redes-footer {
+    margin: 0; }
+    footer .redes-footer a img {
+      width: 55px;
+      height: 55px;
+      margin: 0;
+      padding: 0; } }
 
 /**-------------------TALLERES--------**/
 @media screen and (max-width: 500px) {
