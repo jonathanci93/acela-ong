@@ -1,26 +1,30 @@
-//*VARIABLES
+//*VARIABLES se usa sobre el atributo a darle
+// Ejemplo background-color: $color-primario;
 $color-primario:rgb(2, 75, 2);
 $color-secundario: black;
 $color-terciario: white;
 //*LISTAS
 $colores:
 red,
-yellow,
+yellow,                
 blue;
-
+//*Las listas se usan con el comando nth y el orden en cual se encuentre
+// Ejemplo font-size: nth($font-size, 1);
 $font-size:
 30px,
 25px,
 20px,
 15px;
-//*EXTENDS
+//*EXTENDS se usa con el @extend %nombre
+// @extend %flex; EJEMPLO
 
 %flex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap
 }
-//*MIXIN
+//*MIXIN se usan con el @include nombre
+// @include display (flex, row, space-between); EJEMPLO
 @mixin display ($flex, $direction, $justify){
     display: $flex;
     flex-direction: $direction;

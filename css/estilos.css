@@ -68,6 +68,12 @@ main .hipocrates {
     color: burlywood; }
 
 /*-----------------SECCIONES NOSOTROS----------*/
+main .acela h2 {
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin-bottom: 10px; }
+
 main .acela p {
   font-family: sans-serif;
   font-size: 20px;
